@@ -1,0 +1,52 @@
+
+main {
+    margin: 0
+}
+
+.first-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.second-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    .second-text {
+        width: 600px;
+    }
+}
+.yearname {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5ece4;
+    width: 100%;
+    h1 {
+        padding: 0;
+        margin-top: 10px;
+    }
+    p {
+        padding: 0;
+        margin-top: 1px;
+    }
+}
+
+.reference {
+    text-decoration: none;
+    color: rgb(238, 206, 233);
+    background-color: rgb(80, 29, 29);
+    border: 2px solid rgb(129, 84, 84);
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.image_shop{
+    width: 469px;
+    height: auto;
+}

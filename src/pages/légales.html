@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./légales.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@92.9,300..700&display=swap" rel="stylesheet">
+
+    <title>Flash Dance</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Flashdance à Lausanne">
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="./presentation.html">Présentation</a>
+                </li>
+                <li>
+                    <a href="./services.html">Services</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+        </div>
+    </header>
+    <main class="légales-main">
+        <section class="section-légales">
+            <h1>
+                Mentions légales
+            </h1>
+            <div>
+                <ul>
+                    <li>Nom de l'entreprise : Flash Dance</li>
+                    <li>Adresse postale : Rue centrale 31 1003 Lausanne</li>
+                    <li>Téléphone : 0041 21 312 55 20</li>
+                    <li>Adresse électronique : flash-dance@bluewin.ch</li>
+                </ul>
+            </div>
+            <h1>
+                Informations juridiques
+            </h1>
+            <div>
+                <p>
+                    Ce site Internet utilise des cookies. Les cookies sont de petits fichiers textes qui sont
+                    enregistrés sur votre ordinateur, lors de la visite du site, de façon temporaire ou durable. Le
+                    but des cookies est en particulier d’analyser l’utilisation du site, en vue d’une exploitation
+                    statistique, ainsi que d’améliorations continues. Les cookies peuvent être à tout moment
+                    désactivés dans les paramètres de votre navigateur web, partiellement ou en totalité. En
+                    désactivant les cookies, certaines fonctionnalités de ce site peuvent éventuellement ne
+                    plus être disponibles.
+                </p>
+            </div>
+
+            <p>
+                © 2018 Réalisé par localsearch.ch
+            </p>
+            <p>
+                Vers nos inscriptions local.ch et search.ch
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>
+                <span class="bold">
+                    Adresse
+                </span>
+            </p>
+            <p>Flash Dance</p>
+            <p>Rue centrale 31</p>
+            <p>CH - 1003 Lausanne</p>
+        </div>
+
+        <div class="connection">
+            <p>
+                <span class="bold">
+                    Téléphone
+                </span>
+            </p>
+            <a href="tel:0041213125520">
+                0041 21 312 55 20
+            </a>
+            <p>
+                <span class="bold">
+                    E-mail
+                </span>
+            </p>
+            <a href="mailto:flash-dance@bluewin.ch">
+                flash-dance@bluewin.ch
+            </a>
+        </div>
+
+        <div>
+            <p>
+                <a href="légales.html">
+                    Mentions légales
+                </a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.navigation').classList.toggle('active')
+        })
+    </script>
+</body>
+</body>
+
+</html>

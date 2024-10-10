@@ -1,0 +1,19 @@
+
+
+.image-section {
+    width: 550px;
+    height: auto;
+}
+.service_section {
+    width: 100%;
+}
+.columns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    ul {
+        width: 500px;
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./contact.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png" alt="Flashdance à Lausanne">
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="../index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="./presentation.html">Présentation</a>
+                </li>
+                <li>
+                    <a href="./services.html">Services</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+        </div>
+    </header>
+    <main>
+        <section class="contact_section">
+
+            <div class="div">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4617.12225780862!2d6.636627663977189!3d46.52083069622528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDbCsDMxJzE1LjkiTiA2wrAzOCcwOS42IkU!5e0!3m2!1sru!2sua!4v1725967177937!5m2!1sru!2sua"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+
+            <div class="trouver">
+                <h1>Ou nous trouver?</h1>
+                <p>Proche des transport publics</p>
+                <p>Centre-ville</p>
+                <p>Possibilite de stationnement</p>
+            </div>
+            
+                <div class="form">
+                    <div>
+                        <div class="bacground">
+                            <h1>Flash Dance</h1>
+                            <p>Rue centrale 31</p>
+                            <p>1003 Lausanne</p>
+                            <a href="mailto:flash-dance@bluewin.ch">
+                                flash-dance@bluewin.ch
+                            </a>
+                            <a href="tel:0041213125520">
+                                0041 21 312 55 20
+                            </a>
+                        </div>
+                        <div>
+                            <h1>Infos horaires</h1>
+                        </div>
+                        <div class="background">
+                            <div class="column">
+                                <p>Dimanche
+                                </p>
+                                <p>Lundi
+                                </p>
+                                <p>Mardi - Vendredi
+                                </p>
+                                <p>&nbsp;</p>
+                                <p>Samedi</p>
+                            </div>
+                            <div class="column">
+                                <p>Fermé</p>
+                                <p>13:00 - 18:00</p>
+                                <p>09:30 - 12:00</p>
+                                <p>13:00 - 18:00</p>
+                                <p>09:30 - 16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column_form">
+                        <form action="">
+                            <label for="">
+                                Nom
+                            </label>
+                            <input type="text">
+                            <label for="">
+                                Email
+                            </label>
+                            <input type="text">
+                            <label for="">
+                                Telephone
+                            </label>
+                            <input type="text">
+                            <label for="">
+                                Message
+                            </label>
+                            <textarea class="message" name="" id=""></textarea>
+                            
+                        </form>
+
+                        <button class="button">Envoyer</button>
+
+                    </div>
+                </div>
+                
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>
+                <span class="bold">
+                    Adresse
+                </span>
+            </p>
+            <p>Flash Dance</p>
+            <p>Rue centrale 31</p>
+            <p>CH - 1003 Lausanne</p>
+        </div>
+
+        <div class="connection">
+            <p>
+                <span class="bold">
+                    Téléphone 
+                </span>
+            </p>
+            <a href="tel:0041213125520">
+                0041 21 312 55 20
+            </a>
+            <p>
+                <span class="bold">
+                    E-mail 
+                </span>
+            </p>
+            <a href="mailto:flash-dance@bluewin.ch">
+                flash-dance@bluewin.ch
+            </a>
+        </div>
+
+        <div>
+            <p>
+                <a href="légales.html">
+                    Mentions légales
+                </a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.navigation').classList.toggle('active')
+        })
+    </script>
+    
+</body>
+
+</html>

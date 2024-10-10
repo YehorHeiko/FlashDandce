@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./presentation.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png" alt="Flashdance à Lausanne">
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="../index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="./presentation.html">Présentation</a>
+                </li>
+                <li>
+                    <a href="./services.html">Services</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+        </div>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="yearname">
+                <h1>
+                    Vêtements et accessoires de danse depuis 1988
+                </h1>
+                <p>
+                    Flash Dance, votre boutique spécialisée en plein coeur de Lausanne
+                </p>
+            </div>
+        </section>
+        <section class="second-section">
+                <div class="second-text">
+                    <h2>Bienvenue</h2>
+                    <p>
+                        Crée en 1988 puis repris en 1999, la boutique Flash Dance a plus de 26 ans de savoir-faire dans
+                        la vente de plusieurs articles
+                        et accessoires pour la danse! Notre grande expérience de ce domaine nous permet de vous offrir
+                        un conseil professionnel et personnalisé.
+                    </p>
+                    <p>
+                        Que vous pratiquiez des danses contemporaines comme le jazz ou plus classiques comme le ballet
+                        ou les claquettes, la danse de salon telle que le mambo, la salsa ou le tango, nous vous
+                        fournissons les chaussures, les habits, les accessoires, ainsi que tous se qui vous est
+                        nécessaire afin de pratiquer votre danse dans les meilleures conditions.
+                    </p>
+                    <p>
+                        Nous fournissons également plusieurs écoles de danse sur Lausanne.
+                    </p>
+                    <p>
+                        De plus, si vous souhaitez acquérir un ou plusieurs articles que nous n'avons pas en stock, nous
+                        pouvons faire des commandes spéciales auprès de nos fournisseurs.
+
+
+                    </p>
+                    <p>
+                        Que vous soyez artiste en devenir, professionnel accompli ou simple amateur, vous pourrez
+                        dénicher tout le matériel nécessaire à votre art chez Flash Dance.
+                    </p>
+                    <a href="./contact.html" class="reference">
+                        N'hésitez pas à nous contacter pour toute question.
+                    </a>
+                </div>
+                <div class="image_shop">
+                    <img src="../img/main.jpg" alt="">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>
+                <span class="bold">
+                    Adresse
+                </span>
+            </p>
+            <p>Flash Dance</p>
+            <p>Rue centrale 31</p>
+            <p>CH - 1003 Lausanne</p>
+        </div>
+
+        <div class="connection">
+            <p>
+                <span class="bold">
+                    Téléphone 
+                </span>
+            </p>
+            <a href="tel:0041213125520">
+                0041 21 312 55 20
+            </a>
+            <p>
+                <span class="bold">
+                    E-mail 
+                </span>
+            </p>
+            <a href="mailto:flash-dance@bluewin.ch">
+                flash-dance@bluewin.ch
+            </a>
+        </div>
+
+        <div>
+            <p>
+                <a href="légales.html">
+                    Mentions légales
+                </a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.navigation').classList.toggle('active')
+        })
+    </script>
+</body>
+</body>
+
+</html>

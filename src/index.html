@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@92.9,300..700&display=swap" rel="stylesheet">
+
+    <title>Flash Dance</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Flashdance à Lausanne">
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="./pages/presentation.html">Présentation</a>
+                </li>
+                <li>
+                    <a href="./pages/services.html">Services</a>
+                </li>
+                <li>
+                    <a href="./pages/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+        </div>
+    </header>
+
+    <main class="accueil-main">
+        <section class="section-accueil">
+            <img src="./img/FotoLogo.png" alt="Ballett-shop">
+            <h1>Ballett Shop Zurich - ваш специализированный магазин балета и танцев</h1>
+            <p>Балетный цех в старом городе Цюриха был основан в 1977 году г-жой Хильдегард Шелленбаум. С самого начала она придавала большое значение широкому
+                ассортименту продукции, удовлетворяющему как можно больше потребностей клиентов. Вы можете узнать больше о нас здесь.
+            </p>
+            <p>Будь то зумба, сальса или стандартный/латиноамериканский танец, йога, фитнес или джазовый танец, чечетка или классический балет - здесь покупатели
+                найдут такой широкий выбор обуви, одежды и танцевального оборудования, как нигде в Швейцарии. Ballet Shop Zurich позиционирует себя как учереждение,
+                Обслуживающее танцора. Независимо от того, являетесь ли вы профессионалом или танцуете для себя страстное хобби, у нас есть для вас подходящяя обувь
+                или одежда, и мы будем рады проконсультировать вас в нашем магазине в Цюрихе.
+            </p>
+            <p>Мы с нетерпением ждём вашего визита!
+            </p>
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-9a6827b4-c8a4-485d-95a4-e2a15b7ad418" data-elfsight-app-lazy></div>
+        </section>
+        <!-- <div>
+            <h1>Где вы можете нас найти</h1>
+            <div>
+                <h2>Бесплатный салон в Цюрих</h2>
+                <p>Romergosse 4</p>
+                <p>B limatoquai</p>
+                <p>8001 Цюрих</p>
+            </div>
+            <div>
+
+            </div>
+        </div> -->
+    </main>
+
+    <footer>
+        <div>
+            <p>
+                <span class="bold">
+                    Adresse
+                </span>
+            </p>
+            <p>Flash Dance</p>
+            <p>Rue centrale 31</p>
+            <p>CH - 1003 Lausanne</p>
+        </div>
+
+        <div class="connection">
+            <p>
+                <span class="bold">
+                    Téléphone 
+                </span>
+            </p>
+            <a href="tel:0041213125520">
+                0041 21 312 55 20
+            </a>
+            <p>
+                <span class="bold">
+                    E-mail 
+                </span>
+            </p>
+            <a href="mailto:flash-dance@bluewin.ch">
+                flash-dance@bluewin.ch
+            </a>
+        </div>
+
+        <div>
+            <p>
+                <a href="./pages/légales.html">
+                    Mentions légales
+                </a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.navigation').classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
