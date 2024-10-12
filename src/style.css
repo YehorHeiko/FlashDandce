@@ -147,9 +147,15 @@ main {
 	}
 }
 .accueil-main {
-	
 	display: flex;
 	justify-content: center;
+
+	
+}
+@media screen and (max-width: 1021px) {
+	.accueil-main {
+		padding: 20px
+	}
 }
 
 footer {

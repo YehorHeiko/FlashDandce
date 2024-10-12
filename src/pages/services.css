@@ -6,6 +6,7 @@
 }
 .service_section {
     width: 100%;
+    padding: 25px 0;
 }
 .columns {
     display: flex;
@@ -16,4 +17,21 @@
     ul {
         width: 500px;
     }
+}
+
+@media screen and (max-width: 1021px) {
+    .columns {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        width: 100%;
+        ul {
+            width: 500px;
+        }
+    }
+    .list {
+    }
+    
 }

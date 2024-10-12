@@ -41,20 +41,69 @@
     </header>
 
     <main class="accueil-main">
+
         <section class="section-accueil">
             <img src="./img/FotoLogo.png" alt="Ballett-shop">
-            <h1>Ballett Shop Zurich - ваш специализированный магазин балета и танцев</h1>
-            <p>Балетный цех в старом городе Цюриха был основан в 1977 году г-жой Хильдегард Шелленбаум. С самого начала она придавала большое значение широкому
-                ассортименту продукции, удовлетворяющему как можно больше потребностей клиентов. Вы можете узнать больше о нас здесь.
-            </p>
-            <p>Будь то зумба, сальса или стандартный/латиноамериканский танец, йога, фитнес или джазовый танец, чечетка или классический балет - здесь покупатели
-                найдут такой широкий выбор обуви, одежды и танцевального оборудования, как нигде в Швейцарии. Ballet Shop Zurich позиционирует себя как учереждение,
-                Обслуживающее танцора. Независимо от того, являетесь ли вы профессионалом или танцуете для себя страстное хобби, у нас есть для вас подходящяя обувь
-                или одежда, и мы будем рады проконсультировать вас в нашем магазине в Цюрихе.
-            </p>
-            <p>Мы с нетерпением ждём вашего визита!
-            </p>
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+
+
+        <section class="slider">
+            <div class="slider-container">
+                <div class="slider-track">
+                    <div class="slider-item">
+                        <img src="./img/services1img.jpg" alt="slider1">
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/services2img.jpg" alt="slider2">
+                    </div>
+                    <div class="slider-item">
+                        <img src="./img/services3img.jpg" alt="slider3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .slider {
+                position: relative;
+                margin-top: 30px;
+                width: 100%;
+                overflow: hidden;
+            }
+            .slider-container {
+                position: relative;
+                width: 100%;
+                height: 500px;
+                overflow: hidden;
+            }
+            .slider-track {
+                position: relative;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                transition: all 3s ease-in-out;
+            }
+            .slider-item {
+                position: relative;
+                flex-shrink: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .slider-item img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        </style>
+        <script>
+            const sliderItems = document.querySelectorAll('.slider-item');
+            let sliderIndex = 0;
+            setInterval(function() {
+                sliderIndex++;
+                if (sliderIndex >= sliderItems.length) {
+                    sliderIndex = 0;
+                }
+                document.querySelector('.slider-track').style.transform = `translateX(-${sliderIndex * 100}%)`;
+            }, 3000);
+        </script>            <script src="https://static.elfsight.com/platform/platform.js" async></script>
             <div class="elfsight-app-9a6827b4-c8a4-485d-95a4-e2a15b7ad418" data-elfsight-app-lazy></div>
         </section>
         <!-- <div>

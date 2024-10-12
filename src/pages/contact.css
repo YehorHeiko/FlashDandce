@@ -7,6 +7,7 @@
 
 .contact_section {
     margin: auto;
+    padding: 25px 0;
 }
 
 .form {
@@ -55,8 +56,10 @@ form {
 }
 
 @media screen and (max-width: 1021px) {
+
     .contact_section {
         width: 100%;
+        padding: 25px 0;
         align-items: center;
         text-align: center;
 
