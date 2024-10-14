@@ -25,6 +25,7 @@
     .column:last-child {
         text-align: right;
     }
+  
 }
 
 form {
@@ -55,6 +56,51 @@ form {
     border-radius: 10px;
 }
 
+.icon {
+    background-image: url(../img/litleicons/image.png);
+    background-repeat: no-repeat;
+    background-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 17px;
+    height: 15px;
+}
+.iconphone {
+    background-image: url(../img/litleicons/phone.png);
+    background-repeat: no-repeat;
+    background-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+}
+.bus {
+    background-image: url(../img/litleicons/bus.png);
+    background-repeat: no-repeat;
+    background-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+}
+.i {
+    background-image: url(../img/litleicons/i.png);
+    background-repeat: no-repeat;
+    background-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}
+.p {
+    background-image: url(../img/litleicons/p.png);
+    background-repeat: no-repeat;
+    background-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}
 @media screen and (max-width: 1021px) {
 
     .contact_section {
@@ -73,6 +119,14 @@ form {
       
         .trouver {
             padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .texterea {
+            align-self: center;
+            width: 200px;
+            text-align: left;
         }
         .form {
             flex-wrap: wrap;

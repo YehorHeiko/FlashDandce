@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="/images/logo.png" type="image/png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@92.9,300..700&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Flash Dance</title>
+
 </head>
 
 <body>
@@ -21,7 +27,7 @@
 
         <nav class="navigation">
             <ul>
-                <li>
+                <li class="active-page">
                     <a href="index.html">Accueil</a>
                 </li>
                 <li>
@@ -43,81 +49,32 @@
     <main class="accueil-main">
 
         <section class="section-accueil">
-            <img src="./img/FotoLogo.png" alt="Ballett-shop">
+            <img class="image-main" src="./img/Magazine.jpg" alt="Ballett-shop">
 
-
-        <section class="slider">
-            <div class="slider-container">
-                <div class="slider-track">
-                    <div class="slider-item">
-                        <img src="./img/services1img.jpg" alt="slider1">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        <div class="block-slide">
+                            <span>Boutique de vêtement et accessoires de danse
+                                à Lausanne
+                            </span>
+    
+                            <button>Contactez-nous</button>
+                        </div>
                     </div>
-                    <div class="slider-item">
-                        <img src="./img/services2img.jpg" alt="slider2">
-                    </div>
-                    <div class="slider-item">
-                        <img src="./img/services3img.jpg" alt="slider3">
+                    <div class="swiper-slide slide-2">
+                        <div class="block-slide">
+                            <span>Boutique de vêtement et accessoires de danse
+                                à Lausanne
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <style>
-            .slider {
-                position: relative;
-                margin-top: 30px;
-                width: 100%;
-                overflow: hidden;
-            }
-            .slider-container {
-                position: relative;
-                width: 100%;
-                height: 500px;
-                overflow: hidden;
-            }
-            .slider-track {
-                position: relative;
-                display: flex;
-                width: 100%;
-                height: 100%;
-                transition: all 3s ease-in-out;
-            }
-            .slider-item {
-                position: relative;
-                flex-shrink: 0;
-                width: 100%;
-                height: 100%;
-            }
-            .slider-item img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        </style>
-        <script>
-            const sliderItems = document.querySelectorAll('.slider-item');
-            let sliderIndex = 0;
-            setInterval(function() {
-                sliderIndex++;
-                if (sliderIndex >= sliderItems.length) {
-                    sliderIndex = 0;
-                }
-                document.querySelector('.slider-track').style.transform = `translateX(-${sliderIndex * 100}%)`;
-            }, 3000);
-        </script>            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
             <div class="elfsight-app-9a6827b4-c8a4-485d-95a4-e2a15b7ad418" data-elfsight-app-lazy></div>
         </section>
-        <!-- <div>
-            <h1>Где вы можете нас найти</h1>
-            <div>
-                <h2>Бесплатный салон в Цюрих</h2>
-                <p>Romergosse 4</p>
-                <p>B limatoquai</p>
-                <p>8001 Цюрих</p>
-            </div>
-            <div>
-
-            </div>
-        </div> -->
     </main>
 
     <footer>
@@ -135,7 +92,7 @@
         <div class="connection">
             <p>
                 <span class="bold">
-                    Téléphone 
+                    Téléphone
                 </span>
             </p>
             <a href="tel:0041213125520">
@@ -143,7 +100,7 @@
             </a>
             <p>
                 <span class="bold">
-                    E-mail 
+                    E-mail
                 </span>
             </p>
             <a href="mailto:flash-dance@bluewin.ch">
@@ -160,10 +117,21 @@
         </div>
     </footer>
     <script>
-        document.querySelector('.burger').addEventListener('click', function() {
+        document.querySelector('.burger').addEventListener('click', function () {
             this.classList.toggle('active');
             document.querySelector('.navigation').classList.toggle('active')
         })
+
+
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+        }
+        );
+
+
     </script>
 </body>
 
