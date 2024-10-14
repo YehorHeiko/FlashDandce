@@ -69,13 +69,13 @@ header {
 		width: 30px;
 		height: 18px;
 		cursor: pointer;
+		left: -15px;
 		
 	}
 	.burger::after,
 	.burger::before,
 	.burger span {
 		position: absolute;
-		left: -20px;
 		width: 100%;
 		height: 10%;
 		background-color: rgb(198, 166, 166);
@@ -94,8 +94,7 @@ header {
 		
 		top: 50%;
 		transform: scale(1) translate(0, -50%);
-	}
-	.navigation {
+	}	.navigation {
 		position: fixed;
 		height: 100%;
 		width: 100%;
@@ -195,7 +194,7 @@ main {
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
-
+		
 	  }
 }
 
@@ -214,6 +213,9 @@ main {
 @media screen and (max-width: 1021px) {
 	.accueil-main {
 		padding: 20px
+	}
+	.swiper {
+		width: 100vw !important;
 	}
 }
 
