@@ -171,6 +171,7 @@ main {
 					margin: 10px;
 				}
 			}
+			
 			button {
 				margin-top: 20px;
 				width: 150px;
@@ -178,7 +179,9 @@ main {
 				background-color:  #ecd2c6;;
 				border: 1px solid #a13e11;;
 				border-radius: 10px;
+
 			}
+			
 		}
 		.slide-1 {
 			background-image: url(./img/galery2.jpeg);
